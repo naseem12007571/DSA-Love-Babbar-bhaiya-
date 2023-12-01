@@ -28,21 +28,21 @@ int main()
 taka input from user 
 #include<bits/stdc++.h>
 using namespace std;
-int main()
-{
-    
+
+int main() {
     int n;
-    cout<<"enter the number ";
-    cin>>n;
-    int arr[1000];     // arr[n]
-    for(int i=0;i<n;i++){
-        cin>>arr[i];
-    }
+    cout << "Enter the number: ";
+    cin >> n;
+
+    int arr[1000];  //arr[n];
     
-    int ans=0;
+    cout << "Enter the array elements: ";
+    for (int i = 0; i < n; i++) {
+        cin >> arr[i];
+    }
+     int ans=0;
     for(int i=0;i<n;i++){
         ans=ans^arr[i];
     }
-    
-    cout<<ans;
+    cout<<" unique Element is "<< ans;
 }
