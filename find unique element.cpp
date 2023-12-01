@@ -23,3 +23,26 @@ int main()
     cout<<ans;
 }
 
+
+
+taka input from user 
+#include<bits/stdc++.h>
+using namespace std;
+int main()
+{
+    
+    int n;
+    cout<<"enter the number ";
+    cin>>n;
+    int arr[1000];     // arr[n]
+    for(int i=0;i<n;i++){
+        cin>>arr[i];
+    }
+    
+    int ans=0;
+    for(int i=0;i<n;i++){
+        ans=ans^arr[i];
+    }
+    
+    cout<<ans;
+}
